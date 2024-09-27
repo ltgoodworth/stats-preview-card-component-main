@@ -39,9 +39,9 @@ body {
     background-image: url("images/image-header-desktop.jpg");
     background-size: cover;
     background-position: center;
-    border-radius: 0 2% 2% 0;
-    background-color: hsl(277, 64%, 61%);
-    background-blend-mode: color-dodge;
+    border-radius: 2% 2% 0 0;
+    background-color: hsl(244, 38%, 36%);
+    background-blend-mode: screen;
 }
 
 #info-div {
@@ -76,6 +76,8 @@ p {
 .main-info {
     color: hsl(0, 0%, 100%);
     font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 0;
 }
 
 .stat-heading {
@@ -83,10 +85,15 @@ p {
     font-weight: 400;
     font-size: 10px;
     font-family: "Lexend Deca", sans-serif;
+    letter-spacing: 1px;
 }
 
-table {
-    text-align: left;
+#stats {
+    display: flex;
+}
+
+.stat-div {
+    width: 33%;
     margin-top: 40px;
 }
 
@@ -95,14 +102,28 @@ table {
         display: flex;
         flex-direction: column-reverse;
         width: 100%;
-        height: 760px;
+        height: 800px;
         text-align: center;
-        justify-content: center;
+        justify-content: start;
+        padding-top: 0;
     }
 
-    tr {
-        display: inline-flex;
+    #stats {
         flex-direction: column;
+    }
+
+    .stat-div {
+        margin: 15px auto 0 auto;  
+    }
+
+    #img-div {
+        width: 100%;
+        height: 300px;
+        background-image: url("images/image-header-mobile.jpg");
+    }
+
+    .stat-heading {
+        margin-left: 0;
     }
 
 }
